@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edwin Lin | Software Developer</title>
+  <meta name="description" content="Portfolio of Edwin Lin, a computer science student and software developer. Machine learning, full-stack work, and test automation.">
+  <meta name="theme-color" content="#0A1F44">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Shared icon: a top-down airplane, drawn for this site -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="plane" viewBox="0 0 24 24">
+        <path d="M12 2c.8 0 1.4 1.2 1.4 3v5l8.6 5v2l-8.6-2.2v4.2l2.2 1.6v1.6l-3.6-1-3.6 1v-1.6l2.2-1.6v-4.2L2 17v-2l8.6-5V5c0-1.8.6-3 1.4-3z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Edwin Lin, home">
+        <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="#fff" stroke-width="2"/>
+          <path d="M6 27Q20 8 34 15" fill="none" stroke="#FF4D64" stroke-width="3" stroke-linecap="round"/>
+          <text x="20" y="29" text-anchor="middle" font-size="15" font-weight="700" fill="#fff" class="mark-text">EL</text>
+        </svg>
+        <span class="brand-name">Edwin Lin</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#results">Results</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-demo" id="nav-dashboard" href="#dashboard">Dashboard demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="view-portfolio">
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/hero.jpg" alt="" hidden onload="this.hidden=false">
+      <svg class="contrails" aria-hidden="true" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="#fff" stroke-opacity=".09" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round">
+          <path d="M-40 620C300 520 620 300 1000 210S1380 90 1500 40"/>
+          <path d="M-40 680C340 590 700 380 1060 300S1400 190 1500 150"/>
+          <path d="M-40 560C260 440 560 230 940 130S1360 20 1500 -20"/>
+        </g>
+      </svg>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Edwin Lin</h1>
+          <p class="hero-role">Software developer and computer science student at Georgia State University</p>
+          <p class="hero-summary">
+            I'm finishing my B.S. in Computer Science in December 2026. As a co-op software developer at Delta Air Lines,
+            I built a machine-learning ticket classifier with 90.7% accuracy and cut a hiring-platform test suite
+            from 5 hours to 40 minutes.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="assets/Edwin_Lin_Resume.pdf">Download resume</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <article class="pass" aria-label="Boarding pass summary">
+          <div class="pass-main">
+            <div class="pass-top">
+              <span>Boarding pass</span>
+              <span>Class of 2026</span>
+            </div>
+            <div class="pass-body">
+              <div class="pass-id">
+                <dl class="pass-field">
+                  <dt>Passenger</dt>
+                  <dd>LIN / EDWIN</dd>
+                </dl>
+                <figure class="pass-photo">
+                  <span class="pass-photo-fallback" aria-hidden="true">EL</span>
+                  <img src="assets/headshot.jpg" alt="Portrait of Edwin Lin" hidden onload="this.hidden=false;this.parentElement.classList.add('has-photo')">
+                </figure>
+              </div>
+              <div class="route">
+                <div class="route-end">
+                  <span class="lbl">From</span>
+                  <span class="flap" data-text="GSU" data-label="GSU, Georgia State University"></span>
+                  <span class="city">Georgia State University</span>
+                </div>
+                <svg class="route-plane" aria-hidden="true"><use href="#plane"/></svg>
+                <div class="route-end">
+                  <span class="lbl">To</span>
+                  <span class="flap" data-text="SWE" data-label="SWE, software engineering roles" data-animate></span>
+                  <span class="city">Software engineering roles</span>
+                </div>
+              </div>
+              <dl class="pass-grid">
+                <div><dt>Flight</dt><dd>EL 2026</dd></div>
+                <div><dt>Boards</dt><dd>Dec 2026</dd></div>
+                <div><dt>Degree</dt><dd>B.S. Computer Science</dd></div>
+                <div><dt>GPA</dt><dd>3.7 / 4.0</dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="pass-stub">
+            <svg class="barcode" id="barcode" viewBox="0 0 320 52" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <p>LIN/EDWIN &nbsp; EL2026 &nbsp; ATL</p>
+          </div>
+        </article>
+      </div>
+    <div class="scene" aria-hidden="true">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="xMidYMax slice" focusable="false">
+        <defs>
+          <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0A1F44" stop-opacity="0"/>
+            <stop offset="1" stop-color="#1B4A8C" stop-opacity=".75"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="200" fill="url(#dusk)"/>
+        
+    <g fill="#fff">
+      <g opacity=".07">
+        <ellipse cx="180" cy="150" rx="150" ry="16"/><ellipse cx="260" cy="140" rx="90" ry="14"/>
+        <ellipse cx="760" cy="164" rx="200" ry="14"/><ellipse cx="1240" cy="146" rx="170" ry="16"/>
+      </g>
+      <g opacity=".05">
+        <ellipse cx="500" cy="120" rx="130" ry="12"/><ellipse cx="1000" cy="112" rx="120" ry="11"/><ellipse cx="60" cy="96" rx="90" ry="10"/>
+      </g>
+    </g>
+        
+    <!-- Contrail -->
+    <path d="M548 96C400 128 230 138 -20 160" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+    <!-- Airliner, side view -->
+    <g transform="translate(548 52) rotate(-5)">
+      <defs><clipPath id="fuse"><path id="fuse-shape" d="M8 30Q8 15 42 14H205Q246 16 264 30Q246 44 205 46H42Q8 45 8 30Z"/></clipPath></defs>
+      <path d="M22 16L4 -22H26L62 16Z" fill="#C8102E"/>
+      <path d="M26 34L-6 44H12L44 40Z" fill="#DCE6F5"/>
+      <path d="M112 34L174 74H196L162 34Z" fill="#B9CBE4"/>
+      <rect x="138" y="44" width="38" height="15" rx="7.5" fill="#DCE6F5"/>
+      <rect x="168" y="48" width="8" height="7" rx="3.5" fill="#8FA6C8"/>
+      <path d="M8 30Q8 15 42 14H205Q246 16 264 30Q246 44 205 46H42Q8 45 8 30Z" fill="#fff"/>
+      <g clip-path="url(#fuse)"><rect x="0" y="34" width="280" height="4" fill="#C8102E"/><rect x="0" y="39" width="280" height="8" fill="#DCE6F5"/></g>
+      <path d="M232 22L250 26L236 29Z" fill="#0A1F44"/>
+      <line x1="64" y1="27" x2="222" y2="27" stroke="#123A73" stroke-width="3.2" stroke-dasharray="3.2 6.2" stroke-linecap="round"/>
+    </g>
+        <path fill="#0F2D5C" d="M-10 200V123h45V200ZM38 200V130h30V200ZM72 200V120h44V200ZM118 200V150h34V200ZM154 200V130h47V200ZM210 200V144h43V200ZM263 200V123h56V200ZM325 200V116h40V200ZM371 200V156h37V200ZM414 200V111h57V200ZM481 200V158h45V200ZM534 200V121h48V200ZM589 200V136h38V200ZM637 200V133h47V200ZM690 200V160h51V200ZM748 200V138h59V200ZM809 200V144h53V200ZM868 200V154h54V200ZM926 200V128h49V200ZM983 200V154h36V200ZM1026 200V124h43V200ZM1073 200V139h47V200ZM1124 200V142h56V200ZM1188 200V134h32V200ZM1230 200V125h57V200ZM1297 200V126h48V200ZM1347 200V148h62V200ZM1415 200V118h45V200Z"/><g fill="#FFD98A" opacity=".45"><rect x="18" y="169" width="3" height="3"/><rect x="25" y="171" width="3" height="3"/><rect x="50" y="150" width="3" height="3"/><rect x="58" y="172" width="3" height="3"/><rect x="58" y="163" width="3" height="3"/><rect x="104" y="187" width="3" height="3"/><rect x="93" y="152" width="3" height="3"/><rect x="132" y="182" width="3" height="3"/><rect x="186" y="163" width="3" height="3"/><rect x="187" y="146" width="3" height="3"/><rect x="182" y="144" width="3" height="3"/><rect x="161" y="146" width="3" height="3"/><rect x="239" y="171" width="3" height="3"/><rect x="228" y="184" width="3" height="3"/><rect x="241" y="176" width="3" height="3"/><rect x="233" y="174" width="3" height="3"/><rect x="289" y="174" width="3" height="3"/><rect x="269" y="185" width="3" height="3"/><rect x="347" y="137" width="3" height="3"/><rect x="352" y="151" width="3" height="3"/><rect x="350" y="158" width="3" height="3"/><rect x="396" y="179" width="3" height="3"/><rect x="378" y="175" width="3" height="3"/><rect x="378" y="177" width="3" height="3"/><rect x="380" y="164" width="3" height="3"/><rect x="426" y="124" width="3" height="3"/><rect x="457" y="124" width="3" height="3"/><rect x="443" y="161" width="3" height="3"/><rect x="454" y="154" width="3" height="3"/><rect x="486" y="168" width="3" height="3"/><rect x="492" y="185" width="3" height="3"/><rect x="488" y="172" width="3" height="3"/><rect x="548" y="173" width="3" height="3"/><rect x="541" y="184" width="3" height="3"/><rect x="560" y="149" width="3" height="3"/><rect x="608" y="177" width="3" height="3"/><rect x="606" y="185" width="3" height="3"/><rect x="613" y="187" width="3" height="3"/><rect x="611" y="150" width="3" height="3"/><rect x="661" y="168" width="3" height="3"/><rect x="658" y="174" width="3" height="3"/><rect x="732" y="178" width="3" height="3"/><rect x="696" y="180" width="3" height="3"/><rect x="732" y="188" width="3" height="3"/><rect x="703" y="169" width="3" height="3"/><rect x="791" y="163" width="3" height="3"/><rect x="784" y="147" width="3" height="3"/><rect x="790" y="149" width="3" height="3"/><rect x="833" y="172" width="3" height="3"/><rect x="825" y="175" width="3" height="3"/><rect x="825" y="172" width="3" height="3"/><rect x="837" y="168" width="3" height="3"/><rect x="909" y="183" width="3" height="3"/><rect x="948" y="151" width="3" height="3"/><rect x="951" y="147" width="3" height="3"/><rect x="998" y="183" width="3" height="3"/><rect x="995" y="176" width="3" height="3"/><rect x="993" y="164" width="3" height="3"/><rect x="1039" y="146" width="3" height="3"/><rect x="1056" y="139" width="3" height="3"/><rect x="1032" y="165" width="3" height="3"/><rect x="1037" y="152" width="3" height="3"/><rect x="1100" y="184" width="3" height="3"/><rect x="1158" y="172" width="3" height="3"/><rect x="1169" y="176" width="3" height="3"/><rect x="1147" y="176" width="3" height="3"/><rect x="1199" y="142" width="3" height="3"/><rect x="1208" y="181" width="3" height="3"/><rect x="1237" y="180" width="3" height="3"/><rect x="1264" y="186" width="3" height="3"/><rect x="1316" y="138" width="3" height="3"/><rect x="1320" y="141" width="3" height="3"/><rect x="1317" y="136" width="3" height="3"/><rect x="1388" y="159" width="3" height="3"/><rect x="1352" y="186" width="3" height="3"/><rect x="1399" y="163" width="3" height="3"/><rect x="1362" y="188" width="3" height="3"/><rect x="1446" y="129" width="3" height="3"/></g>
+        
+    <!-- Stylized towers (spire, cylinder, stepped) -->
+    <g fill="#143B78">
+      <path d="M948 200V70h40V200Z"/>
+      <path d="M948 70l20-46 20 46Z"/>
+      <rect x="965" y="10" width="6" height="20"/>
+      <path d="M1018 200V88a22 22 0 0 1 44 0V200Z"/>
+      <path d="M1090 200V96h34V200Z"/>
+      <path d="M1098 96V82h18V96Z"/>
+      <path d="M1140 200V116h26V200Z"/>
+    </g>
+    <g fill="#FFD98A" opacity=".55">
+      <rect x="956" y="90" width="3" height="3"/><rect x="972" y="104" width="3" height="3"/><rect x="960" y="126" width="3" height="3"/><rect x="976" y="150" width="3" height="3"/>
+      <rect x="1030" y="110" width="3" height="3"/><rect x="1046" y="132" width="3" height="3"/><rect x="1036" y="158" width="3" height="3"/>
+      <rect x="1100" y="120" width="3" height="3"/><rect x="1112" y="146" width="3" height="3"/>
+    </g>
+        <path fill="#0B2249" d="M-10 200V163h65V200ZM62 200V178h53V200ZM119 200V182h79V200ZM205 200V168h68V200ZM276 200V165h57V200ZM335 200V177h60V200ZM404 200V177h63V200ZM471 200V181h51V200ZM525 200V166h44V200ZM572 200V170h80V200ZM655 200V176h54V200ZM714 200V154h62V200ZM779 200V176h53V200ZM840 200V172h53V200ZM895 200V160h48V200ZM945 200V181h62V200ZM1015 200V178h67V200ZM1084 200V169h51V200ZM1138 200V182h74V200ZM1215 200V176h73V200ZM1293 200V182h57V200ZM1353 200V165h44V200ZM1399 200V180h68V200Z"/>
+      </svg>
+    </div>
+      <div class="runway" aria-hidden="true"></div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section" id="results" aria-labelledby="results-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="results-title">What I shipped at Delta</h2>
+          <p>Numbers from my co-op with Delta's Business Operations and Analytics team.</p>
+        </div>
+
+        <div class="tiles">
+          <article class="tile tile-gauge">
+            <h3>Ticket classification accuracy</h3>
+            <svg class="gauge" viewBox="0 0 200 126" role="img" aria-label="Gauge showing 90.7 percent accuracy">
+              <g class="ticks" id="ticks"></g>
+              <path class="g-track" d="M20 100A80 80 0 0 1 180 100" pathLength="100"/>
+              <path class="g-fill" d="M20 100A80 80 0 0 1 180 100" pathLength="100" stroke-dasharray="90.7 100"/>
+              <circle cx="176.6" cy="76.9" r="5" fill="#fff"/>
+              <text x="100" y="94" text-anchor="middle" class="g-num">90.7%</text>
+              <text x="20" y="119" text-anchor="middle" class="g-end">0</text>
+              <text x="180" y="119" text-anchor="middle" class="g-end">100</text>
+            </svg>
+            <p>F1 score of 0.906 across 8 airline ticket categories, using a LinearSVC model.</p>
+          </article>
+
+          <article class="tile tile-runtime">
+            <h3>Test suite runtime</h3>
+            <div class="bars" role="img" aria-label="Runtime dropped from 5 hours to 40 minutes">
+              <div class="bar-row">
+                <span class="bar-label">Before</span>
+                <div class="bar-track"><div class="bar" style="width:100%"></div></div>
+                <span class="bar-val">5 hours</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">After</span>
+                <div class="bar-track"><div class="bar bar-after" style="width:13.3%"></div></div>
+                <span class="bar-val">40 min</span>
+              </div>
+            </div>
+            <p class="big-line"><span class="big-num">87%</span> faster</p>
+            <p>I re-engineered 280+ test cases with parallelization and redundant-test removal, which sped up CI/CD feedback loops.</p>
+          </article>
+
+          <article class="tile tile-tickets">
+            <h3>Flight-delay tickets in one place</h3>
+            <p class="big-line"><span class="big-num">500+</span> a month</p>
+            <ul class="cats" aria-hidden="true">
+              <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <p>The dashboard centralizes these tickets and other key metrics, sorted into 8 airline categories.</p>
+          </article>
+
+          <article class="tile tile-tests">
+            <h3>Test scenarios rewritten</h3>
+            <p class="big-line"><span class="big-num">200+</span> scenarios</p>
+            <p>I replaced redundant brute-force tests on Delta's hiring platform with targeted checks, which reduced false positives in automated test detection.</p>
+          </article>
+        </div>
+
+        <div class="flow-block">
+          <h3>How the ticket classifier is wired together</h3>
+          <ol class="route-flow">
+            <li><strong>ServiceNow</strong><span>Ticketing system with live tickets</span></li>
+            <li><strong>REST APIs</strong><span>Connect the model to ServiceNow</span></li>
+            <li><strong>LinearSVC model</strong><span>Retrains daily on live ticket data</span></li>
+            <li><strong>Dev PostgreSQL</strong><span>Validates results without touching production</span></li>
+            <li><strong>AWS Lambda API</strong><span>Exposes the outputs</span></li>
+            <li><strong>Dashboard</strong><span>Tickets by category, plus key metrics</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <section class="section section-tint" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="experience-title">Experience and education</h2>
+          <p>Where I've worked and studied, all in the Atlanta area. Scroll through the stops and the map follows.</p>
+        </div>
+
+        <div class="path-grid">
+          <div class="stops">
+
+            <article class="stop" data-stop="delta">
+              <header class="stop-head">
+                <div class="stop-title"><svg class="stop-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#plane"/></svg><h3>Delta Air Lines</h3></div>
+                <span class="stop-dates">Jan to Aug 2026</span>
+              </header>
+              <div class="stop-body">
+                <p class="role">Co-op IT Software Developer, Business Operations and Analytics</p>
+                <p class="where">Atlanta, GA</p>
+                <ul class="points">
+                  <li>Built an end-to-end dashboard that connects a LinearSVC model to ServiceNow through REST APIs. It sorts tickets into 8 airline categories with 90.7% accuracy (0.906 F1) and centralizes 500+ flight-delay tickets a month.</li>
+                  <li>Set up daily retraining on live ticket data and wrote outputs to a dev PostgreSQL database, so results could be validated without affecting production. Exposed the model through AWS Lambda API functions.</li>
+                  <li>Added delegation to a hierarchical approval workflow on Delta's hiring platform, so approvers can reassign approval authority through REST API-driven front-end features.</li>
+                  <li>Fixed UI defects and shipped quality-of-life improvements, including dark mode, across the centralized hiring approval platform.</li>
+                  <li>Rewrote 200+ test scenarios, replacing redundant brute-force tests with targeted checks that reduced false positives in automated test detection.</li>
+                  <li>Re-engineered execution of 280+ test cases through parallelization and redundant-test elimination, cutting runtime from 5 hours to 40 minutes (87% faster).</li>
+                </ul>
+                <ul class="chips" aria-label="Tools used">
+                  <li>LinearSVC</li><li>ServiceNow</li><li>REST APIs</li><li>AWS Lambda</li><li>PostgreSQL</li><li>CI/CD</li><li>UI automation</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="stop" data-stop="gsu-it">
+              <header class="stop-head">
+                <div class="stop-title"><svg class="stop-icon stop-icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H3zM8 20h8M12 16v4"/></svg><h3>Georgia State University</h3></div>
+                <span class="stop-dates">Aug 2023 to Dec 2025</span>
+              </header>
+              <div class="stop-body">
+                <p class="role">IT Tech Specialist</p>
+                <p class="where">Alpharetta, Clarkston, Dunwoody, and Decatur campuses</p>
+                <ul class="points">
+                  <li>Provided on-site audio/visual and event support across four campuses. Configured, tested, and troubleshot Crestron control systems, sound systems, and stage equipment ahead of live events and presentations.</li>
+                  <li>Re-imaged and deployed laptops for system transitions and managed bulk device checkouts for students and patrons, with secure data handling.</li>
+                  <li>Installed and configured computers to replace multiple campus computer labs, handling hardware setup from start to finish.</li>
+                </ul>
+                <ul class="chips" aria-label="Focus areas">
+                  <li>Crestron</li><li>AV and event support</li><li>Device imaging</li><li>Hardware setup</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="stop" data-stop="eh">
+              <header class="stop-head">
+                <div class="stop-title"><svg class="stop-icon stop-icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v11H3zM9 8V5h6v3M3 13h18"/></svg><h3>Enterprise Hall</h3></div>
+                <span class="stop-dates">Oct to Dec 2022</span>
+              </header>
+              <div class="stop-body">
+                <p class="role">Business Rotational Intern</p>
+                <p class="where">Atlanta, GA</p>
+                <ul class="points">
+                  <li>Diagnosed a marketing visibility gap in a case study challenge, then built a proof-of-concept website with a no-code platform and a task storyboard, and presented the solution to executive leadership.</li>
+                  <li>Cleaned and analyzed data from multiple sources to support strategy decisions.</li>
+                  <li>Earned Trailhead badges in Salesforce CRM and the Google Analytics for Beginners certification.</li>
+                </ul>
+                <ul class="chips" aria-label="Tools used">
+                  <li>Salesforce CRM</li><li>Google Analytics</li><li>No-code tools</li><li>Data analysis</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="stop" data-stop="edu">
+              <header class="stop-head">
+                <div class="stop-title"><svg class="stop-icon stop-icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg><h3>Georgia State University</h3></div>
+                <span class="stop-dates">Expected Dec 2026</span>
+              </header>
+              <div class="stop-body">
+                <p class="role">Bachelor of Computer Science</p>
+                <p class="where">Atlanta, GA</p>
+                <ul class="chips" aria-label="Honors and credentials">
+                  <li>GPA 3.7 / 4.0</li><li>HOPE Scholarship recipient</li><li>QuestBridge College Match finalist</li><li>President's List</li><li>Data Science Certification</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+          <aside class="map-panel" aria-label="Map of where I've worked and studied">
+            <div class="map" id="map" data-focus="delta">
+              <svg class="map-svg" viewBox="0 0 360 620" role="img" aria-labelledby="map-title">
+                <title id="map-title">Map of the Atlanta area showing Delta Air Lines near the airport, and Georgia State's downtown, Decatur, Clarkston, Dunwoody, and Alpharetta campuses</title>
+                <defs>
+                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/>
+                  </pattern>
+                </defs>
+                <rect width="360" height="620" fill="url(#grid)"/>
+                <g fill="none" stroke="#fff" stroke-opacity=".09">
+                  <circle cx="106" cy="407" r="80"/>
+                  <circle cx="106" cy="407" r="160"/>
+                  <circle cx="106" cy="407" r="240"/>
+                  <circle cx="106" cy="407" r="320"/>
+                </g>
+
+                <g transform="translate(330 34)" aria-hidden="true">
+                  <path d="M0-14L6 6 0 2-6 6Z" fill="#fff" fill-opacity=".55"/>
+                  <text y="24" text-anchor="middle" class="north">N</text>
+                </g>
+
+                <!-- Routes out of the downtown hub -->
+                <path id="route-delta" class="track" data-group="delta" d="M106 407Q60 470 67 532"/>
+                <path class="track" data-group="gsu" d="M106 407Q150 375 189 384"/>
+                <path class="track" data-group="gsu" d="M106 407Q190 320 241 344"/>
+                <path class="track" data-group="gsu" d="M106 407Q90 290 154 193"/>
+                <path class="track" data-group="gsu" d="M106 407Q250 200 191 50"/>
+
+                <!-- Plane flying the Delta route -->
+                <g class="plane" aria-hidden="true">
+                  <g>
+                    <g transform="rotate(90)"><use href="#plane" x="-10" y="-10" width="20" height="20"/></g>
+                    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" path="M106 407Q60 470 67 532"/>
+                  </g>
+                </g>
+
+                <!-- Pins -->
+                <g class="pin" data-group="hub" transform="translate(106 407)">
+                  <circle class="pulse" r="10"/>
+                  <circle class="dot" r="7"/>
+                  <text class="lbl" x="-14" y="4" text-anchor="end">Downtown</text>
+                </g>
+                <g class="pin" data-group="delta" transform="translate(67 532)">
+                  <rect class="dot" x="-6" y="-6" width="12" height="12" rx="2"/>
+                  <text class="lbl" x="14" y="4">Delta Air Lines</text>
+                </g>
+                <g class="pin" data-group="gsu" transform="translate(189 384)">
+                  <circle class="dot" r="5"/>
+                  <text class="lbl" x="12" y="4">Decatur</text>
+                </g>
+                <g class="pin" data-group="gsu" transform="translate(241 344)">
+                  <circle class="dot" r="5"/>
+                  <text class="lbl" x="12" y="4">Clarkston</text>
+                </g>
+                <g class="pin" data-group="gsu" transform="translate(154 193)">
+                  <circle class="dot" r="5"/>
+                  <text class="lbl" x="12" y="4">Dunwoody</text>
+                </g>
+                <g class="pin" data-group="gsu" transform="translate(191 50)">
+                  <circle class="dot" r="5"/>
+                  <text class="lbl" x="12" y="4">Alpharetta</text>
+                </g>
+              </svg>
+              <p class="map-caption" id="map-caption" aria-live="polite">Delta Air Lines, Atlanta</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="projects-title">Projects</h2>
+          <p>Two projects: one in machine learning and one full stack.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="diagram" aria-hidden="true">
+              <div class="flow3">
+                <div class="node"><strong>Accident data</strong><span>2016 to 2023</span></div>
+                <span class="conn"></span>
+                <div class="stack">
+                  <div class="node"><strong>ARIMA</strong></div>
+                  <div class="node"><strong>RNN</strong></div>
+                </div>
+                <span class="conn"></span>
+                <div class="node node-hot"><strong>Compare accuracy</strong><span>ARIMA ahead by 15 to 20%</span></div>
+              </div>
+            </div>
+            <img class="shot" src="assets/projects/accident-model.png" alt="Screenshot of the Car Accident Prediction Model results" hidden onload="this.hidden=false">
+            <div class="project-body">
+              <h3>Car Accident Prediction Model</h3>
+              <p class="kind">Machine learning</p>
+              <p>I built a machine-learning pipeline in Anaconda that compares ARIMA and RNN models on a real-world accident dataset from 2016 to 2023. After applying fine-tuning strategies to both, ARIMA consistently outperformed the RNN by 15 to 20% at predicting trends.</p>
+              <ul class="chips" aria-label="Tools used">
+                <li>ARIMA</li><li>RNN</li><li>Anaconda</li><li>Model comparison</li>
+              </ul>
+              <!-- Add your repo link here:
+              <a class="text-link" href="https://github.com/YOUR-USERNAME/YOUR-REPO">View the code on GitHub</a>
+              -->
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="diagram" aria-hidden="true">
+              <div class="flow3">
+                <div class="node"><strong>Student teams</strong><span>Users</span></div>
+                <span class="conn"></span>
+                <div class="node node-hot"><strong>Flask web app</strong><span>Full stack</span></div>
+                <span class="conn"></span>
+                <div class="stack">
+                  <div class="node"><strong>Register projects</strong></div>
+                  <div class="node"><strong>Manage scrums</strong></div>
+                  <div class="node"><strong>Team communication</strong></div>
+                </div>
+              </div>
+            </div>
+            <img class="shot" src="assets/projects/classroom-dashboard.png" alt="Screenshot of the Classroom Project Dashboard" hidden onload="this.hidden=false">
+            <div class="project-body">
+              <h3>Classroom Project Dashboard</h3>
+              <p class="kind">Full stack</p>
+              <p>I built a full-stack Flask web app that lets students register projects, manage scrums, and streamline team communication. It started as a learning project and was featured to school stakeholders as a model of student-led tooling.</p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Flask</li><li>Full stack</li><li>Agile/Scrum</li>
+              </ul>
+              <!-- Add your repo link here:
+              <a class="text-link" href="https://github.com/YOUR-USERNAME/YOUR-REPO">View the code on GitHub</a>
+              -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-dark" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="skills-title">Skills</h2>
+          <p>The languages, tools, and platforms I've worked with.</p>
+        </div>
+
+        <dl class="board">
+          <div class="board-head" aria-hidden="true"><span>Area</span><span>Tools and languages</span></div>
+          <div class="board-row">
+            <dt>Languages</dt>
+            <dd><ul class="cells"><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Java</li><li>SQL</li><li>C++</li><li>C</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Frontend and frameworks</dt>
+            <dd><ul class="cells"><li>Angular</li><li>Node.js</li><li>Flask</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Databases and APIs</dt>
+            <dd><ul class="cells"><li>SQL</li><li>PostgreSQL</li><li>REST APIs</li><li>Database management</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Cloud and DevOps</dt>
+            <dd><ul class="cells"><li>AWS Lambda</li><li>AWS S3</li><li>AWS SAM</li><li>GitLab CI/CD</li><li>CI/CD pipelines</li><li>UI automation</li><li>Agile/Scrum</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Data and machine learning</dt>
+            <dd><ul class="cells"><li>Scikit-Learn</li><li>pandas</li><li>PyTorch</li><li>Power BI</li><li>ARIMA</li><li>RNN</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Other tools</dt>
+            <dd><ul class="cells"><li>Salesforce CRM</li><li>Google Analytics</li></ul></dd>
+          </div>
+          <div class="board-row">
+            <dt>Concepts</dt>
+            <dd><ul class="cells"><li>Object-oriented programming</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-title">Contact</h2>
+          <p class="contact-text">I graduate in December 2026 and I'm open to software developer opportunities. Email is the fastest way to reach me.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:danvse@gmail.com">Email me</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/edwin-lin-its" rel="noopener">LinkedIn</a>
+          <!-- Add your GitHub profile here:
+          <a class="btn btn-outline" href="https://github.com/YOUR-USERNAME" rel="noopener">GitHub</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </div>
+
+  <!-- DASHBOARD DEMO TAB -->
+  <div id="view-dashboard" hidden>
+    <main class="dash" id="dashboard-main" aria-labelledby="dash-title">
+      <div class="wrap">
+        <header class="dash-head">
+          <div>
+            <h1 id="dash-title">Ticket operations dashboard <span class="sample-badge">Sample data</span></h1>
+            <p>A working demo of the kind of dashboard I build. <strong>Click a bar or a station</strong> to filter everything, <strong>click a number</strong> for a breakdown, or <strong>click a point on the trend line</strong> to open a scatter plot. The data is randomly generated for this demo. It is not from Delta or ServiceNow. Try it: click the Weather impact bar, then the peak on the trend line.</p>
+          </div>
+          <div class="seg" role="group" aria-label="Time range">
+            <button type="button" data-range="4" aria-pressed="false">4 weeks</button>
+            <button type="button" data-range="8" aria-pressed="false">8 weeks</button>
+            <button type="button" data-range="12" aria-pressed="true">12 weeks</button>
+          </div>
+        </header>
+
+        <div class="filterbar" aria-label="Filters">
+          <div class="filter-group">
+            <span class="filter-label" id="pri-label">Priority</span>
+            <div class="pri-toggles" id="pri-toggles" role="group" aria-labelledby="pri-label"></div>
+          </div>
+          <div class="filter-chips" id="filter-chips" aria-live="polite"></div>
+          <button type="button" class="link-btn" id="reset" hidden>Clear all filters</button>
+        </div>
+
+        <section class="kpis" id="kpis" aria-label="Key metrics. Select one for a breakdown."></section>
+
+        <div class="dash-grid">
+          <section class="panel p-trend" aria-labelledby="t-trend">
+            <div class="panel-head">
+              <h2 id="t-trend">Tickets per week</h2>
+              <p class="key"><span><i style="background:#5BA4FF"></i>All tickets</span><span><i style="background:#FF4D64"></i>P1 and P2</span></p>
+            </div>
+            <p class="hint">Click any point to open that week in detail.</p>
+            <div id="chart-trend"></div>
+          </section>
+
+          <section class="panel p-cats" aria-labelledby="t-cats">
+            <div class="panel-head"><h2 id="t-cats">By category</h2></div>
+            <p class="hint">Click bars to filter. Click again to remove.</p>
+            <div id="chart-cats"></div>
+          </section>
+
+          <section class="panel p-map" aria-labelledby="t-map">
+            <div class="panel-head"><h2 id="t-map">By station</h2></div>
+            <p class="hint">Bigger circles mean more tickets. Click a station to filter.</p>
+            <div id="chart-map"></div>
+          </section>
+
+          <section class="panel p-heat" aria-labelledby="t-heat">
+            <div class="panel-head"><h2 id="t-heat">When tickets arrive</h2></div>
+            <p class="hint">Ticket creation by weekday and time of day. Hover a cell for the count.</p>
+            <div id="chart-heat"></div>
+          </section>
+
+          <section class="panel p-table" aria-labelledby="t-table">
+            <div class="panel-head"><h2 id="t-table">Latest tickets</h2></div>
+            <p class="hint">The eight most recent tickets that match your filters. The bar shows classifier confidence.</p>
+            <div class="table-wrap">
+              <table class="tickets">
+                <thead><tr><th>Ticket</th><th>Created</th><th>Category</th><th>Station</th><th>Priority</th><th>Status</th><th>Confidence</th></tr></thead>
+                <tbody id="table-body"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <dialog class="dlg" id="dlg" aria-labelledby="dlg-title">
+        <header class="dlg-head">
+          <div>
+            <h2 id="dlg-title"></h2>
+            <p class="dlg-sub" id="dlg-sub"></p>
+          </div>
+          <button type="button" class="dlg-close" aria-label="Close">&times;</button>
+        </header>
+        <div class="dlg-body" id="dlg-body"></div>
+        <div class="tip" id="dlg-tip" role="tooltip" hidden></div>
+      </dialog>
+      <div class="tip" id="dash-tip" role="tooltip" hidden></div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Edwin Lin. This is a personal portfolio and is not affiliated with or endorsed by Delta Air Lines, Inc. The airline theme is a design choice.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
